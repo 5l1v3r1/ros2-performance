@@ -80,7 +80,7 @@ int main(int argc, char** argv)
 
     rclcpp::init(argc, argv);
 
-    int executors = 0; // set to 1 if you want to add all nodes to the same executor
+    int executors = 1; // set to 1 if you want to add all nodes to the same executor
     performance_test::System ros2_system(executors);
     ros2_system.enable_events_logger(events_output_path);
 
